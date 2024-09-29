@@ -1,0 +1,17 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model security {
+  camera     Int
+  filename   String    @id @db.VarChar(255)
+  file_type  Int
+  time_stamp DateTime  @db.Timestamp(6)
+  frame      Int?
+  movie_end  DateTime? @db.Timestamp(6)
+}

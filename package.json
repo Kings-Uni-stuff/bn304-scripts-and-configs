@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@prisma/client": "^5.19.1",
+    "@uploadcare/upload-client": "^6.14.1"
+  },
+  "devDependencies": {
+    "prisma": "^5.19.1"
+  }
+}
